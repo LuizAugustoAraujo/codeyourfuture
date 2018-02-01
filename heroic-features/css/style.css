@@ -22,10 +22,28 @@ body {
 }
 
 .margem {
-	margin-top: 121px;
+	margin-bottom: 0px; 
 }
 
+.estilo-titulo{
+	font-style: "Times New Roman";
+	font-size: 54;
 
+}
+
+.entry:not(:first-of-type)
+{
+    margin-top: 10px;
+}
+
+.glyphicon
+{
+    font-size: 12px;
+}
+
+.img-responsive {
+  display: inline-block;
+}
 /* Inicio do meu CSS */
 
 
