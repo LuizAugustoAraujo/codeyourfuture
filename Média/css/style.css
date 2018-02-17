@@ -46,5 +46,66 @@ body {
 }
 /* Inicio do meu CSS */
 
+.tamanhodelta {
+    width: 75px;
+    margin-right: 100px;
+}
 
+.delta {
+    color: white;
+}
+.porto {
+    width: 250px;
+    margin-left: : 5px;
+    margin-right: 5px;
+}
+.sobre {
+    font-size: 24px;
+}
+.educateen {
+    width: 150px;
+}
+.consa {
+    margin-top: 65px;
+    margin-bottom: 77px;
+}
+
+.mack { 
+    margin-bottom: 45px;
+ }
+
+.santo {
+margin-top: 30px;
+margin-bottom: 60px;
+}
+
+.pueri {
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
+.augusto {
+    margin-top: 50px;
+    margin-bottom: 65px;
+}
+
+.lectus {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.italo {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.dante {
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-bottom: 55px;
+}
+
+.liceu {
+    margin-top: 5px;
+}
 /* Fim do meu CSS */
