@@ -54,11 +54,7 @@ body {
 .delta {
     color: white;
 }
-.porto {
-    width: 250px;
-    margin-left: : 5px;
-    margin-right: 5px;
-}
+
 .sobre {
     font-size: 24px;
 }
@@ -74,6 +70,12 @@ body {
     margin-bottom: 45px;
  }
 
+ .mobile {
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
+
 .santo {
 margin-top: 30px;
 margin-bottom: 60px;
@@ -81,12 +83,13 @@ margin-bottom: 60px;
 
 .pueri {
     margin-top: 50px; 
-    margin-bottom: 50px;
+    margin-bottom: 45px;
+    width: 250px;
 }
 
 .augusto {
-    margin-top: 50px;
-    margin-bottom: 65px;
+    margin-top: 80px;
+    margin-bottom: 85px;
 }
 
 .lectus {
@@ -97,6 +100,7 @@ margin-bottom: 60px;
 .italo {
     margin-top: 50px;
     margin-bottom: 40px;
+    margin-left: 20px;
 }
 
 .dante {
@@ -106,6 +110,14 @@ margin-bottom: 60px;
 }
 
 .liceu {
-    margin-top: 5px;
+    margin-top: 50px;
+    width: 150px;
+    margin-bottom: 60px;
+}
+
+.porto {
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 /* Fim do meu CSS */
