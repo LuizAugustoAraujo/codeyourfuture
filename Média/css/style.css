@@ -62,8 +62,9 @@ body {
     width: 150px;
 }
 .consa {
-    margin-top: 65px;
-    margin-bottom: 77px;
+    font-size: 60px;
+    font-style: italic;
+    color: #126aed;
 }
 
 .mack { 
