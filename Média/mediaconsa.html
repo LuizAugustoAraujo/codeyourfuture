@@ -82,52 +82,84 @@
     <div class="container text-center">
         <!-- Jumbotron Header -->
         <header class="jumbotron my-4" > 
-            <img src="http://static.wixstatic.com/media/2ee64f508c72c33a9b9e20a48493e707.wix_mp_256" >
+            <img class="consa2"  src="http://static.wixstatic.com/media/2ee64f508c72c33a9b9e20a48493e707.wix_mp_256" >
 
         </header>
-
-            <div class="text-center container">
-                <h1>Preencha os campos abaixo:</h1>
-                    <p>O formulário abaixo consegue calcular sua média final, a partir das notas do seu trimestre</p>
+    </div>
+            <div class="container">
+                <h1>Preencha os campos abaixo com suas notas:</h1>
+                    <p>O formulário abaixo calcula sua média final, a partir das notas do seu trimestre. </p>
                     <form>
-                     <div class="form-group">
-                            <label for="usr">Nota da P'100:</label>
-                            <input type="number" class="" id="usr">
-                    </div>
                 <div class="form-group">
-                    <label for="pwd">Nota da P'50:</label>
-                    <input type="number" class="" id="pwd">
+                            <label >Nota da P'100:</label>
+                            <input type="number" class="" id="p100">
                 </div>
-                 </form>
+
+                <div class="form-group">
+                    <label>Nota da P'50:</label>
+                    <input type="number" class="" id="p50">
+                </div>
+                 
+
+                 <div class="form-group">
+                    <label >Nota da NC1:</label>
+                    <input type="number" class="" id="nc1">
+                </div>
+                 
+                 <div class="form-group">
+                    <label >Nota da NC2:</label>
+                    <input type="number" class="" id="nc2">
+                </div>
+                 
+
+                 <div class="form-group">
+                    <label >Nota da NC3:</label>
+                    <input type="number" class="" id="nc3">
+                </div>
+                 
+
+                 <div class="form-group">
+                    <label >Nota da NC4:</label>
+                    <input type="number" class="" id="nc4">
+                </div>
                 
 
-            <div class="container">
-                    <div class="row text-center">
-                        <div class="control-group" id="fields">
-                            <label class="control-label text-right" for="field1">Escolha a Quantidade de Notas de Classes </label>
-                                <div class="controls text-center"> 
-                                     <form role="form" autocomplete="off">
-                                        <div class="entry input-group col-xs-3">
-                                        <input class="form-control" name="fields[]" type="text" placeholder="Digite a nota" />
-                                    <span class="input-group-btn">
-                                    <button class="btn btn-success btn-add" type="button"> 
-                                    <span class="glyphicon glyphicon-plus gs"> </span> + </button>
-                                    </span> 
-                                    <div>
-                                         </form>
-                                    <small>Selecione <span class="glyphicon glyphicon-plus gs"></span> para um nova nota.</small>
-                                 </div>
-                        </div>
-                    </div>
-            </div>
+                 <div class="form-group">
+                    <label >Nota da NC5:</label>
+                    <input type="number" class="" id="nc5">
+                </div>
+                <p id="minhamedia"> </p>
+                 </form>
+                 <button onclick="media()">Calcular Média</button>
 </div>
-</div>
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(-23.6010687,-46.6658531),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+
+
+
+
+ <div>
+     <button class="cod-md-8" type="button">Enviar Resposta</button>
+ </div>               
+
     <!-- /Conteúdo da Pagina -->
 
     <!-- Rodapé -->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Luiz Augusto 2018</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Faça sua Média 2018</p>
         </div>
     </footer>
     <!-- /Rodapé -->
@@ -161,6 +193,41 @@
 });
 
     </script>
+
+    <script>
+    function media(){
+        var p100=document.getElementById("p100").value * 0.4;
+
+        var p50=document.getElementById("p50").value * 0.3;
+
+
+        var nc1=document.getElementById("nc1").value * 1;
+
+        var nc2=document.getElementById("nc2").value * 1;
+
+        var nc3=document.getElementById("nc3").value * 1;
+
+        var nc4=document.getElementById("nc4").value * 1;
+
+        var nc5=document.getElementById("nc5").value * 1;
+
+        var ncMedia = (nc1 + nc2 + nc3 + nc4 + nc5) /5 * 0.3;
+
+        var mediaFinal = (p100 + p50 + ncMedia);
+
+
+
+        document.getElementById("minhamedia").innerHTML = "Sua Média: " + mediaFinal;
+
+    }
+
+
+
+    </script>
+
+
+
+
 
     <!-- Importa o Javascript utilizado neste projeto -->
     <script src="js/script.js"></script>
